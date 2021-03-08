@@ -20,24 +20,27 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/background.jpg"),
-                fit: BoxFit.cover,
-              ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/background.jpg"),
+              fit: BoxFit.cover,
             ),
-            child: Center(
-              child: Container(
-                child: Card(
-                  child: Center(
-                    child: Text('Text in a Card',
-                        style: TextStyle(fontFamily: 'DotGothic16')),
+          ),
+          child: Center(
+            child: Container(
+              child: Card(
+                child: Center(
+                  child: Text(
+                    'Text in a Card',
+                    style: TextStyle(fontFamily: 'DotGothic16'),
                   ),
                 ),
-                width: 300,
-                height: 100,
               ),
-            )),
+              width: 300,
+              height: 100,
+            ),
+          ),
+        ),
       ),
     );
   }
